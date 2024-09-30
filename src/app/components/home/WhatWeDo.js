@@ -312,7 +312,7 @@ const WhatWeDo = () => {
           {
             serviceData?.map((service, idx) => {
               return (
-                <div className={`service_column service_col_${idx}`}>
+                <div className={`service_column service_col_${idx}`} key={service?.id}>
                   <div className='service_box'>
                     <div className='service_icon'>
                       <Image

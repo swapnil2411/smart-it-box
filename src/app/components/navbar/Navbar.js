@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const navbar = () => {
+const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const hambugerClick = () => {
     setIsMenuOpen(true)
@@ -49,7 +49,7 @@ const navbar = () => {
                 </li>
                 <li>
                   <Link href="/">
-                    What'sApp Api
+                    What&apos;sApp Api
                   </Link>
                 </li>
               </ul>
@@ -81,4 +81,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar

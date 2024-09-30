@@ -137,7 +137,7 @@ const WhyChooseUs = () => {
               In the fast-paced world of digital innovation, settling for "good" can limit the potential for real, transformative growth. As a digital agency, we believe that true success comes from pushing boundaries, challenging the status quo, and striving for greatness in every 
             </p>
 
-            <Link href="" className='btn_green'>READ MORE</Link>
+            <Link href="/" className='btn_green'>READ MORE</Link>
           </div>
         </div>
         <div className='why_choose_image_area'>
