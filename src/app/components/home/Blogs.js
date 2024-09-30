@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
-import Carousel from 'react-elastic-carousel';
+// import Carousel from 'react-elastic-carousel';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -119,7 +119,7 @@ const Blogs = () => {
             <span className='blogs_title'><span className='text_yellow'>Our </span>Latest Blog</span>
           </h2>
         </div>
-        <Carousel breakPoints={breakPoints} className='blogs_slider'>
+        {/* <Carousel breakPoints={breakPoints} className='blogs_slider'>
           {blogsData.map((item) => (
             <div className='blogs_column'>
               <div className='blogs_box'>
@@ -139,7 +139,7 @@ const Blogs = () => {
               </div>
             </div>
           ))}
-        </Carousel>
+        </Carousel> */}
       </div>
     </section>
   )
