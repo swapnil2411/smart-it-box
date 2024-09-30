@@ -134,7 +134,7 @@ const WhyChooseUs = () => {
               For over 7 years, we have been a trusted digital solutions provider, delivering high-quality services that have earned us several prestigious recognitions within the IT-Software industry. We specialize in a wide range of offerings, including Google Sheets integration, as well as cutting-edge mobile and web app development.
               <br />
               <br />
-              In the fast-paced world of digital innovation, settling for "good" can limit the potential for real, transformative growth. As a digital agency, we believe that true success comes from pushing boundaries, challenging the status quo, and striving for greatness in every 
+              In the fast-paced world of digital innovation, settling for &quot;good&quot; can limit the potential for real, transformative growth. As a digital agency, we believe that true success comes from pushing boundaries, challenging the status quo, and striving for greatness in every 
             </p>
 
             <Link href="/" className='btn_green'>READ MORE</Link>
