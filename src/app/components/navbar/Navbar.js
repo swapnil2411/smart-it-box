@@ -38,12 +38,12 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/About" prefetch={true}>
+                  <Link href="/About">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Certificate" prefetch={true}>
+                  <Link href="/Certificate">
                     Certificate
                   </Link>
                 </li>

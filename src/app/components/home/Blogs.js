@@ -3,13 +3,16 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
-// import Carousel from 'react-elastic-carousel';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const breakPoints = [
-  {width: 600, itemsToShow: 1},
-  {width: 991, itemsToShow: 2},
+  { width: 600, itemsToShow: 1 },
+  { width: 991, itemsToShow: 2 },
   { width: 1200, itemsToShow: 3 }
 ];
 
@@ -76,33 +79,33 @@ const Blogs = () => {
           },
         }, "text_anim");
 
-        tl.to(blogsChipRef.current, {
-          translateY: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: 'sine.out',  // Smooth easing
-        }, "text_anim")
-  
-        tl.to(".blogs_title", {
-          translateY: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: 'sine.out',  // Smooth easing
-        }, "text_anim")
+      tl.to(blogsChipRef.current, {
+        translateY: 0,
+        opacity: 1,
+        duration: 0.8,
+        ease: 'sine.out',  // Smooth easing
+      }, "text_anim")
 
-        tl.from(".blogs_slider", {
-          y: 200,
-          opacity: 0,
-          duration: 0.8,
-          delay: 0.5,
-          ease: 'sine.out',  // Smooth easing
-          stagger: {
-            amount: 0.2,
-          },
-        }, "text_anim")
+      tl.to(".blogs_title", {
+        translateY: 0,
+        opacity: 1,
+        duration: 0.8,
+        ease: 'sine.out',  // Smooth easing
+      }, "text_anim")
 
-        
-      
+      tl.from(".blogs_slider", {
+        y: 200,
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.5,
+        ease: 'sine.out',  // Smooth easing
+        stagger: {
+          amount: 0.2,
+        },
+      }, "text_anim")
+
+
+
     }, blogsRef); // Pass the container where the animations are applied
 
     // Clean up the animations when the component unmounts
@@ -113,15 +116,31 @@ const Blogs = () => {
     <section className='our_blogs_area' ref={blogsRef}>
       <h2 className='floating_txt' ref={floatingTextRef}>Blogs</h2>
       <div className='sec our_blogs_wrapper'>
-      <div className='sec_header'>
+        <div className='sec_header'>
           <span className='chip' ref={blogsChipRef}>Blogs</span>
           <h2>
             <span className='blogs_title'><span className='text_yellow'>Our </span>Latest Blog</span>
           </h2>
         </div>
-        {/* <Carousel breakPoints={breakPoints} className='blogs_slider'>
+
+        <Swiper
+          breakpoints={{
+            640: {
+              slidesPerView: 1
+            },
+            768: {
+              slidesPerView: 2
+            },
+            1024: {
+              slidesPerView: 3
+            },
+          }}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+
           {blogsData.map((item) => (
-            <div className='blogs_column'>
+            <SwiperSlide className='blogs_column'>
               <div className='blogs_box'>
                 <div className='blog_thumbnail'>
                   <Image src={`/images/${item?.imageUrl}${item?.formate}`} width={421} height={250} />
@@ -137,9 +156,9 @@ const Blogs = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </Carousel> */}
+        </Swiper>
       </div>
     </section>
   )
