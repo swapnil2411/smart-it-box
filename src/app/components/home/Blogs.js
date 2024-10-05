@@ -140,7 +140,7 @@ const Blogs = () => {
         >
 
           {blogsData.map((item) => (
-            <SwiperSlide className='blogs_column'>
+            <SwiperSlide className='blogs_column' key={item?.id}>
               <div className='blogs_box'>
                 <div className='blog_thumbnail'>
                   <Image src={`/images/${item?.imageUrl}${item?.formate}`} width={421} height={250} />
