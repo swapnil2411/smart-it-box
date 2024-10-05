@@ -20,7 +20,7 @@ const ClientsSlide = () => {
         scrollTrigger: {
           trigger: clientAreaRef.current,
           start: 'top top',
-          end: '+=1000',
+          end: '+=5000',
           pin: true,
           scrub: true,
           markers: false, // Remove markers after debugging
@@ -59,7 +59,7 @@ const ClientsSlide = () => {
       tl.from([".client_slide_one", ".client_slide_two"], {
         [isMobile ? 'translateX' : 'marginTop']: (i) => 
           i === 0 ? (isMobile ? "-3700px" : "-500%") : (isMobile ? "150px" : "100%"),
-        duration: 5,
+        duration: 20,
         ease: 'sine.out',
         stagger: 0.2,
       }, "client_slide");
