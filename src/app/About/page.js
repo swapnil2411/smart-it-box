@@ -6,11 +6,11 @@ import VisionMission from '../components/about/VisionMission'
 
 const About = () => {
   return (
-    <>
+    <div>
       <AboutBanner />
       <AboutContent />
       <VisionMission />
-    </>
+    </div>
   )
 }
 

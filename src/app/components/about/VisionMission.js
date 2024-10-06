@@ -18,7 +18,7 @@ const VisionMission = () => {
               start: '0% 80%',  // Animation starts when the section hits 50% of the viewport
               end: '100% 50%',  // Animation ends at the same point
               scrub: true,
-              markers: true, // Remove markers after debugging
+              markers: false, // Remove markers after debugging
             },
           });
     

@@ -14,7 +14,7 @@ import Youtube from './components/home/Youtube'
 
 const Home = () => {
     return (
-      <>
+      <div>
         <Banner />
         <Specialization />
         <GoogleWorkplaceAutomation />
@@ -26,7 +26,7 @@ const Home = () => {
         <Industries />
         <Blogs />
         <Youtube />
-      </>
+      </div>
     )
 }
 
