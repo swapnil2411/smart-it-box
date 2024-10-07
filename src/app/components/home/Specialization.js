@@ -20,7 +20,7 @@ const Specialization = () => {
         scrollTrigger: {
           trigger: specializationRef.current,
           start: 'top top',
-          end: '+=1000',
+          end: '+=3000',
           pin: true,
           scrub: true,
           markers: false, // Keep this for debugging, remove later

@@ -61,7 +61,7 @@ const Footer = () => {
             <h3>Company</h3>
             <ul>
               <li>
-                <Link href="">
+                <Link href="/About">
                   About
                 </Link>
               </li>
@@ -71,62 +71,62 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/Certificate">
                   Certificate
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/Contact">
                   Contact Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="">
                   Blog
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className='footer_column'>
             <h3>Our Services</h3>
             <ul>
               <li>
-                <Link href="">
+                <Link href="/">
                 Google Sheet Automate
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/">
                 What’s app Api
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/">
                 Email Integration
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/">
                 Digital Marketing
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/">
                 UI/UX design
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/">
                 Web Development
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/">
                 App Development
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/">
                 Software Development
                 </Link>
               </li>

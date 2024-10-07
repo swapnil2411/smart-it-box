@@ -84,7 +84,7 @@ const ClientsSlide = () => {
               <h4 className='sub_title'>
                 <span>Driving technology for leading brands</span>
               </h4>
-              <Link href="" className='btn_green'>Explore</Link>
+              <Link href="/Clients" className='btn_green'>Explore</Link>
             </div>
           </div>
         </div>

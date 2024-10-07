@@ -33,22 +33,22 @@ const Navbar = () => {
             <div className='menu_wrapper'>
               <ul>
                 <li>
-                  <Link href="/">
+                  <Link href="/" onClick={closeMenu}>
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/About">
+                  <Link href="/About" onClick={closeMenu}>
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Certificate">
+                  <Link href="/Certificate" onClick={closeMenu}>
                     Certificate
                   </Link>
                 </li>
                 <li>
-                  <Link href="/">
+                  <Link href="/" onClick={closeMenu}>
                     What&apos;sApp Api
                   </Link>
                 </li>

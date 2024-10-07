@@ -48,7 +48,7 @@ const GetInTouch = () => {
           We’re here to help. Whether you need expert advice, custom solutions, <br />
           or just want to learn more, our team is just a message away.
         </p>
-        <Link href="" className='btn_green'>Get In Touch</Link>
+        <Link href="/Contact" className='btn_green'>Get In Touch</Link>
       </div>
     </section>
   )

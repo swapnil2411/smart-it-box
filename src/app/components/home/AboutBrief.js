@@ -138,7 +138,7 @@ const AboutBrief = () => {
               Experience the power of better agency solutions for superior user consultations. Elevate your business with our expert services, providing seamless interactions and customized strategies. Unleash the potential of user engagement, satisfaction, and growth through our innovative agency approach. With a commitment to excellence, we ensure that better agency means a better experience for you and your users. Consult with us for unparalleled insights and strategies that transform your business into a user-centric powerhouse.
             </p>
 
-            <Link href="" className='btn_green'>Read More</Link>
+            <Link href="/About" className='btn_green'>Read More</Link>
           </div>
         </div>
         <div className='about_breif_img' ref={imageRevealRef}>
