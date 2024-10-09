@@ -35,94 +35,99 @@ const Banner = () => {
         },
       });
 
-      tl.to(".products_img img:nth-child(1)", {
-        top: "92vh",
-        left: "7vw",
-        duration: 3,
-        opacity: 1,
-        width: "auto",
-        ease: 'power3.out',
-      }, 'product_img_anim')
-      .to(".products_img img:nth-child(2)", {
-        top: "10vh",
-        left: "8vw",
-        duration: 3,
-        opacity: 1,
-        width: "auto",
-        ease: 'power3.out',
-      }, 'product_img_anim') // Offset to start slightly earlier
+      tl.to(".products_name", {
+        right: "0%",
+        duration: 10,
+      })
+
+      // tl.to(".products_img img:nth-child(1)", {
+      //   top: "92vh",
+      //   left: "7vw",
+      //   duration: 3,
+      //   opacity: 1,
+      //   width: "auto",
+      //   ease: 'power3.out',
+      // }, 'product_img_anim')
+      // .to(".products_img img:nth-child(2)", {
+      //   top: "10vh",
+      //   left: "8vw",
+      //   duration: 3,
+      //   opacity: 1,
+      //   width: "auto",
+      //   ease: 'power3.out',
+      // }, 'product_img_anim') // Offset to start slightly earlier
   
-      .to(".products_img img:nth-child(3)", {
-        top: "20vh",
-        left: "35vw",
-        duration: 3,
-        opacity: 1,
-        width: "auto",
-        ease: 'power3.out',
-      }, 'product_img_anim')
+      // .to(".products_img img:nth-child(3)", {
+      //   top: "20vh",
+      //   left: "35vw",
+      //   duration: 3,
+      //   opacity: 1,
+      //   width: "auto",
+      //   ease: 'power3.out',
+      // }, 'product_img_anim')
   
-      .to(".products_img img:nth-child(4)", {
-        top: "45vh",
-        left: "1vw",
-        duration: 3,
-        opacity: 1,
-        width: "auto",
-        ease: 'power3.out',
-      }, 'product_img_anim')
+      // .to(".products_img img:nth-child(4)", {
+      //   top: "45vh",
+      //   left: "1vw",
+      //   duration: 3,
+      //   opacity: 1,
+      //   width: "auto",
+      //   ease: 'power3.out',
+      // }, 'product_img_anim')
   
-      .to(".products_img img:nth-child(5)", {
-        top: "93vh",
-        left: "60vw",
-        duration: 3,
-        opacity: 1,
-        width: "auto",
-        ease: 'power3.out',
-      }, 'product_img_anim')
+      // .to(".products_img img:nth-child(5)", {
+      //   top: "93vh",
+      //   left: "60vw",
+      //   duration: 3,
+      //   opacity: 1,
+      //   width: "auto",
+      //   ease: 'power3.out',
+      // }, 'product_img_anim')
   
-      .to(".products_img img:nth-child(6)", {
-        top: "65vh",
-        left: "70vw",
-        duration: 3,
-        opacity: 1,
-        width: "auto",
-        ease: 'power3.out',
-      }, 'product_img_anim')
+      // .to(".products_img img:nth-child(6)", {
+      //   top: "65vh",
+      //   left: "70vw",
+      //   duration: 3,
+      //   opacity: 1,
+      //   width: "auto",
+      //   ease: 'power3.out',
+      // }, 'product_img_anim')
   
-      .to(".products_img img:nth-child(7)", {
-        top: "70vh",
-        left: "45vw",
-        duration: 3,
-        opacity: 1,
-        width: "auto",
-        ease: 'power3.out',
-      }, 'product_img_anim')
+      // .to(".products_img img:nth-child(7)", {
+      //   top: "70vh",
+      //   left: "45vw",
+      //   duration: 3,
+      //   opacity: 1,
+      //   width: "auto",
+      //   ease: 'power3.out',
+      // }, 'product_img_anim')
   
-      .to(".products_img img:nth-child(8)", {
-        top: "90vh",
-        left: "90vw",
-        duration: 3,
-        opacity: 1,
-        width: "auto",
-        ease: 'power3.out',
-      }, 'product_img_anim')
+      // .to(".products_img img:nth-child(8)", {
+      //   top: "90vh",
+      //   left: "90vw",
+      //   duration: 3,
+      //   opacity: 1,
+      //   width: "auto",
+      //   ease: 'power3.out',
+      // }, 'product_img_anim')
   
-      .to(".products_img img:nth-child(9)", {
-        top: "38vh",
-        left: "80vw",
-        duration: 3,
-        opacity: 1,
-        width: "auto",
-        ease: 'power3.out',
-      }, 'product_img_anim')
+      // .to(".products_img img:nth-child(9)", {
+      //   top: "38vh",
+      //   left: "80vw",
+      //   duration: 3,
+      //   opacity: 1,
+      //   width: "auto",
+      //   ease: 'power3.out',
+      // }, 'product_img_anim')
   
-      .to(".products_img img:nth-child(10)", {
-        top: "12vh",
-        left: "92vw",
-        duration: 3,
-        opacity: 1,
-        width: "auto",
-        ease: 'power3.out',
-      }, 'product_img_anim');
+      // .to(".products_img img:nth-child(10)", {
+      //   top: "12vh",
+      //   left: "92vw",
+      //   duration: 3,
+      //   opacity: 1,
+      //   width: "auto",
+      //   ease: 'power3.out',
+      // }, 'product_img_anim');
 
       
     }, bannerScrollRef); // Pass the container where the animations are applied
@@ -159,7 +164,29 @@ const Banner = () => {
           <img src="/images/vector_name.png" alt="products_circle" />
         </div>
 
-        <div className="products_img">
+        <div className="products_name">
+          <span>IMS</span>
+          <span>PMS</span>
+          <span>FMS</span>
+          <span>PO</span>
+          <span>GRN</span>
+          <span>ISSUANCE</span>
+          <span>ORDER COLLECTION</span>
+          <span>BOM</span>
+          <span>FULL KITTING</span>
+          <span>PRODUCTION</span>
+          <span>PACKING LIST</span>
+          <span>SALER ORDER</span>
+          <span>TAX INVOICE</span>
+          <span>SALES LEAD</span>
+          <span>SALES FOLLOW-UP</span>
+          <span>SALES NURTURE</span>
+          <span>QUOTATION</span>
+          <span>PROFORMA INVOICE</span>
+          <span>DELEGATION SYSTEM</span>
+          <span>STAFF CHECKLIST</span>
+        </div>
+        {/* <div className="products_img">
           <img src="/images/product_01.png" alt="Product One" />
           <img src="/images/product_02.png" alt="Product One" />
           <img src="/images/product_03.png" alt="Product One" />
@@ -170,7 +197,7 @@ const Banner = () => {
           <img src="/images/product_08.png" alt="Product One" />
           <img src="/images/product_09.png" alt="Product One" />
           <img src="/images/product_10.png" alt="Product One" />
-        </div>
+        </div> */}
       </div>
     </section>
   )
