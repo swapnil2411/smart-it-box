@@ -285,7 +285,8 @@ header {
 .products_reveal .banner_products_vector{
   position: absolute;
   bottom: 5vh;
-  right: -3vw;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
 }
 
