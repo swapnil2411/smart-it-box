@@ -34,7 +34,7 @@ const VisionMission = () => {
           tl.to(".vision_mission_para", {
             opacity: 1,
             duration: 0.5,
-            delay: 1,
+            delay: 0.2,
             ease: 'sine.out',  // Smooth easing
           }, "text_anim")
     

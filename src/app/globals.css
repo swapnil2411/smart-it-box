@@ -3249,6 +3249,10 @@ left: calc(80vw - 20px);
   flex: 0 0 33.33%;
   max-width: 33.33%;
 }
+
+.line{
+  width: 1px;
+}
 }
 
 @media screen and (max-width: 576px){
