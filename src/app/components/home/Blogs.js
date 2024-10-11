@@ -28,28 +28,32 @@ const Blogs = () => {
       "title": "Google Sheet Shortcut Keys",
       "description": "Google Sheet Shortcut Keys For Window And Mac In today’s fast-paced world, time is of the essence. Every second saved counts towards productivity and success. One tool that has revolutionised the way we handle data and spreadsheets is Google Sheets. To make the most of this powerful tool, it’s essential…",
       "imageUrl": "google_sheet_shortcut_key",
-      "formate": ".png"
+      "formate": ".png",
+      "redirectUrl": "/Blogs/Googlesheet_Shortcuts"
     },
     {
       "id": 2,
       "title": "Beginner’s Guide to Google Sheet App Script",
       "description": "Introduction In today’s fast-paced digital era, efficiency is key. The Google Sheet App Script is a powerful tool that allows users to automate tasks and customize Google Sheets to suit their specific needs. Whether you’re a seasoned professional or just starting out, this beginner’s guide will walk you through the…",
       "imageUrl": "beginner_guide",
-      "formate": ".png"
+      "formate": ".png",
+      "redirectUrl": "/Blogs/"
     },
     {
       "id": 3,
       "title": "WhatsApp Business API for Education",
       "description": "In today’s rapidly evolving digital landscape, communication is key, and WhatsApp has emerged as a powerful tool for businesses and institutions to connect with their audiences. This holds particularly true for the education sector, where the WhatsApp Business API has opened up a world of opportunities. From streamlining communication between…",
       "imageUrl": "whatsapp_api",
-      "formate": ".png"
+      "formate": ".png",
+      "redirectUrl": "/Blogs/"
     },
     {
       "id": 4,
       "title": "Google Sheet Automation Experts in Delhi",
       "description": "In the heart of Delhi’s bustling business landscape, a game-changer is revolutionizing the way businesses operate – SMART ITBOX, your trusted Google Sheet automation expert. With a commitment to efficiency, accuracy, and innovation, SMART ITBOX is your go-to partner for unleashing the full potential of Google Sheets through strategic automation…",
       "imageUrl": "google_sheet_shortcut_key",
-      "formate": ".png"
+      "formate": ".png",
+      "redirectUrl": "/Blogs/"
     }
   ]
 
@@ -150,7 +154,7 @@ const Blogs = () => {
                   <p>
                     {item?.description}
                   </p>
-                  <Link href="" className='blogs_explore'>
+                  <Link href={item?.redirectUrl} className='blogs_explore'>
                     <span>Explore</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" /></svg>
                   </Link>
