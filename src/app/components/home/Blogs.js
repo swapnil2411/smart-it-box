@@ -5,8 +5,11 @@ import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+// import required modules
+import { Navigation } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/navigation';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -37,7 +40,7 @@ const Blogs = () => {
       "description": "Introduction In today’s fast-paced digital era, efficiency is key. The Google Sheet App Script is a powerful tool that allows users to automate tasks and customize Google Sheets to suit their specific needs. Whether you’re a seasoned professional or just starting out, this beginner’s guide will walk you through the…",
       "imageUrl": "beginner_guide",
       "formate": ".png",
-      "redirectUrl": "/Blogs/"
+      "redirectUrl": "/Blogs/Google_Script_For_Beginner"
     },
     {
       "id": 3,
@@ -45,7 +48,7 @@ const Blogs = () => {
       "description": "In today’s rapidly evolving digital landscape, communication is key, and WhatsApp has emerged as a powerful tool for businesses and institutions to connect with their audiences. This holds particularly true for the education sector, where the WhatsApp Business API has opened up a world of opportunities. From streamlining communication between…",
       "imageUrl": "whatsapp_api",
       "formate": ".png",
-      "redirectUrl": "/Blogs/"
+      "redirectUrl": "/Blogs/Whatsapp_Business_Api"
     },
     {
       "id": 4,
@@ -53,7 +56,7 @@ const Blogs = () => {
       "description": "In the heart of Delhi’s bustling business landscape, a game-changer is revolutionizing the way businesses operate – SMART ITBOX, your trusted Google Sheet automation expert. With a commitment to efficiency, accuracy, and innovation, SMART ITBOX is your go-to partner for unleashing the full potential of Google Sheets through strategic automation…",
       "imageUrl": "google_sheet_shortcut_key",
       "formate": ".png",
-      "redirectUrl": "/Blogs/"
+      "redirectUrl": "/Blogs/Google_Sheet_Automation_Expert"
     }
   ]
 
@@ -117,7 +120,7 @@ const Blogs = () => {
   }, []);
 
   return (
-    <section className='our_blogs_area' ref={blogsRef}>
+    <section className='our_blogs_area' ref={blogsRef} id="blog_area">
       <h2 className='floating_txt' ref={floatingTextRef}>Blogs</h2>
       <div className='sec our_blogs_wrapper'>
         <div className='sec_header'>
@@ -139,8 +142,10 @@ const Blogs = () => {
               slidesPerView: 3
             },
           }}
+          navigation={true} modules={[Navigation]}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
+          className="mySwiper"
         >
 
           {blogsData.map((item) => (

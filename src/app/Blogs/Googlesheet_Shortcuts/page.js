@@ -1,11 +1,17 @@
 import React from 'react'
+import Link from 'next/link'
 
 const page = () => {
   return (
     <section className='blog_page'>
       <div className='sec blog_wrapper'>
-        <div className='sec_header'>
-          <span className='chip'>Blogs</span>
+                <div className='blog_breadcrumb'>
+                    <Link href="">Home</Link>
+                    <span className="slash">/</span>
+                    <span>Google Sheet Shortcut Keys</span>
+                </div>
+                <div className='sec_header'>
+                    <span className='chip'>Blogs</span>
           <h2 className='mb-0'>
             <span className='blog_title'><span className='text_yellow'>Google Sheet</span> Shortcut Keys</span>
           </h2>
