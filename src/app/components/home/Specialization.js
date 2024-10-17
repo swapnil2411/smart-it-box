@@ -12,7 +12,7 @@ import GoogleAppScript from "../../../../public/images/google-apps-script.png"
 import Gmail from "../../../../public/images/gmail.png"
 import Keeps from "../../../../public/images/keeps.png"
 import GoogleChatOne from "../../../../public/images/google_chat.png"
-import GoogleChatTwo from "../../../../public/images/google_chat_2.png"
+import GoogleChatTwo from "../../../../public/images/Google_Chat_2.png"
 import Docs from "../../../../public/images/docs.png"
 
 gsap.registerPlugin(ScrollTrigger);
