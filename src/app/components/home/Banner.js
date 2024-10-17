@@ -5,6 +5,18 @@ import Link from 'next/link'
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useEffect, useRef } from 'react';
+import BannerVector from "../../../../public/images/vector_name.png"
+import BannerImg from "../../../../public/images/banner_img.png"
+import ProductOne from "../../../../public/images/product_01.png"
+import ProductTwo from "../../../../public/images/product_02.png"
+import ProductThree from "../../../../public/images/product_03.png"
+import ProductFour from "../../../../public/images/product_04.png"
+import ProductFive from "../../../../public/images/product_05.png"
+import ProductSix from "../../../../public/images/product_06.png"
+import ProductSeven from "../../../../public/images/product_07.png"
+import ProductEight from "../../../../public/images/product_08.png"
+import ProductNine from "../../../../public/images/product_09.png"
+import ProductTen from "../../../../public/images/product_10.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -138,7 +150,7 @@ const Banner = () => {
   return (
     <section className='hero_section' ref={bannerScrollRef}>
       <Image
-        src="/images/banner_img.png"
+        src={BannerImg}
         width={1920}
         height={1080}
         priority
@@ -161,7 +173,13 @@ const Banner = () => {
       </div>
       <div className="products_reveal">
         <div className="banner_products_vector">
-          <img src="/images/vector_name.png" alt="products_circle" />
+        <Image src={BannerVector} 
+            height={200}
+            width={200}
+            style={{width: "unset", height: "unset"}}
+            alt='product_one'
+            priority
+          />
         </div>
 
         {/* <div className="products_name">
@@ -187,16 +205,76 @@ const Banner = () => {
           <span>STAFF CHECKLIST</span>
         </div> */}
         <div className="products_img">
-          <img src="/images/product_01.png" alt="Product One" />
-          <img src="/images/product_02.png" alt="Product One" />
-          <img src="/images/product_03.png" alt="Product One" />
-          <img src="/images/product_04.png" alt="Product One" />
-          <img src="/images/product_05.png" alt="Product One" />
-          <img src="/images/product_06.png" alt="Product One" />
-          <img src="/images/product_07.png" alt="Product One" />
-          <img src="/images/product_08.png" alt="Product One" />
-          <img src="/images/product_09.png" alt="Product One" />
-          <img src="/images/product_10.png" alt="Product One" />
+          <Image src={ProductOne} 
+            height={100}
+            width={200}
+            style={{width: "unset", height: "unset"}}
+            alt='product_one'
+            priority
+          />
+          <Image src={ProductTwo} 
+            height={100}
+            width={200}
+            style={{width: "unset", height: "unset"}}
+            alt='product_two'
+            priority
+          />
+          <Image src={ProductThree} 
+            height={100}
+            width={200}
+            style={{width: "unset", height: "unset"}}
+            alt='product_three'
+            priority
+          />
+          <Image src={ProductFour} 
+            height={100}
+            width={200}
+            style={{width: "unset", height: "unset"}}
+            alt='product_four'
+            priority
+          />
+          <Image src={ProductFive} 
+            height={100}
+            width={200}
+            style={{width: "unset", height: "unset"}}
+            alt='product_five'
+            priority
+          />
+          <Image src={ProductSix} 
+            height={100}
+            width={200}
+            style={{width: "unset", height: "unset"}}
+            alt='product_six'
+            priority
+          />
+          <Image src={ProductSeven} 
+            height={100}
+            width={200}
+            style={{width: "unset", height: "unset"}}
+            alt='product_seven'
+            priority
+          />
+          <Image src={ProductEight} 
+            height={100}
+            width={200}
+            style={{width: "unset", height: "unset"}}
+            alt='product_eight'
+            priority
+          />
+          <Image src={ProductNine} 
+            height={100}
+            width={200}
+            style={{width: "unset", height: "unset"}}
+            alt='product_nine'
+            priority
+          />
+          <Image src={ProductTen} 
+            height={100}
+            width={200}
+            style={{width: "unset", height: "unset"}}
+            alt='product_ten'
+            priority
+          />
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import AboutImage from "../../../../public/images/about_img.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -143,7 +144,7 @@ const AboutBrief = () => {
         </div>
         <div className='about_breif_img' ref={imageRevealRef}>
           <Image
-            src="/images/about_img.png"
+            src={AboutImage}
             alt="Overview About Us"
             width={602}
             height={737}

@@ -1,4 +1,4 @@
-
+"use client"
 import React from 'react'
 import Banner from './components/home/Banner'
 import Specialization from './components/home/Specialization'

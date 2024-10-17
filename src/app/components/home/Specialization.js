@@ -4,6 +4,16 @@ import Image from 'next/image'
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import GoogleIcon from "../../../../public/images/search.png"
+import GoogleSheetICon from "../../../../public/images/sheets.png"
+import GoogleSlide from "../../../../public/images/google-slide.png"
+import GoogleDrive from "../../../../public/images/google-drive.png"
+import GoogleAppScript from "../../../../public/images/google-apps-script.png"
+import Gmail from "../../../../public/images/gmail.png"
+import Keeps from "../../../../public/images/keeps.png"
+import GoogleChatOne from "../../../../public/images/google_chat.png"
+import GoogleChatTwo from "../../../../public/images/google_chat_2.png"
+import Docs from "../../../../public/images/docs.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -213,7 +223,7 @@ const Specialization = () => {
       </div>
       <div className='specialization_icons'>
         <Image
-          src="/images/search.png"
+          src={GoogleIcon}
           alt="Google"
           width={512}
           height={512}
@@ -224,7 +234,7 @@ const Specialization = () => {
         />
 
         <Image
-          src="/images/sheets.png"
+          src={GoogleSheetICon}
           alt="Google Sheet"
           width={512}
           height={512}
@@ -235,7 +245,7 @@ const Specialization = () => {
         />
 
         <Image
-          src="/images/google-slide.png"
+          src={GoogleSlide}
           alt="Google Slide"
           width={512}
           height={512}
@@ -245,7 +255,7 @@ const Specialization = () => {
         />
 
         <Image
-          src="/images/google-drive.png"
+          src={GoogleDrive}
           alt="Google Drive"
           width={512}
           height={512}
@@ -255,7 +265,7 @@ const Specialization = () => {
         />
 
         <Image
-          src="/images/google-apps-script.png"
+          src={GoogleAppScript}
           alt="Google Apps Script"
           width={512}
           height={512}
@@ -265,7 +275,7 @@ const Specialization = () => {
         />
 
         <Image
-          src="/images/gmail.png"
+          src={Gmail}
           alt="Gmail"
           width={512}
           height={512}
@@ -275,7 +285,7 @@ const Specialization = () => {
         />
 
         <Image
-          src="/images/keeps.png"
+          src={Keeps}
           alt="Google Keeps"
           width={512}
           height={512}
@@ -285,7 +295,7 @@ const Specialization = () => {
         />
 
         <Image
-          src="/images/google_chat.png"
+          src={GoogleChatOne}
           alt="Google Chat"
           width={512}
           height={512}
@@ -295,7 +305,7 @@ const Specialization = () => {
         />
 
         <Image
-          src="/images/Google_Chat_2.png"
+          src={GoogleChatTwo}
           alt="Google Chat"
           width={512}
           height={512}
@@ -305,7 +315,7 @@ const Specialization = () => {
         />
 
         <Image
-          src="/images/docs.png"
+          src={Docs}
           alt="Google Docs"
           width={512}
           height={512}

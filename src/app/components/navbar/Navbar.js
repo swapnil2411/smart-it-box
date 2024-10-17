@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Logo from "../../../../public/images/logo.png"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -17,7 +18,7 @@ const Navbar = () => {
         <nav>
           <div className='logo_wrapper'>
             <Link href="/">
-              <Image src="/images/logo.png"
+              <Image src={Logo}
                 alt="Smart IT Box"
                 width={300}
                 height={70}

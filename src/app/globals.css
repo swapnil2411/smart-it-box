@@ -319,7 +319,7 @@ header {
 }
 
 .products_img img{
-  max-width: 5.417vw;
+  max-width: 5.417vw !important;
   position: absolute;
   top: 86vh;
   left: 47vw;
